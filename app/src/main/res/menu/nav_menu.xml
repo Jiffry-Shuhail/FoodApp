@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view" >
+    <group
+        android:checkableBehavior="single">
+    <item
+        android:id="@+id/product"
+        android:title="@string/product_caps"/>
+    <item
+        android:id="@+id/foodDelivery"
+        android:title="@string/food_delivery"/>
+
+    <item
+        android:id="@+id/location"
+        android:title="@string/location"/>
+
+    <item
+        android:id="@+id/billUpload"
+        android:title="@string/bill_upload"/>
+    <item
+        android:id="@+id/printingSetting"
+        android:title="@string/print_setting"/>
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Logout"/>
+        </menu>
+    </item>
+</menu>

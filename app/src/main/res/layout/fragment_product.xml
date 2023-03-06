@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProductFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginTop="-50dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/backgroud">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="@color/light_gray_50"
+                        app:cardCornerRadius="75dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            app:cardBackgroundColor="@color/colorOnPrimary"
+                            app:cardCornerRadius="65dp">
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/main_product"/>
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="85dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:textAllCaps="true"
+                                android:text="@string/product"/>
+                        </com.google.android.material.card.MaterialCardView>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productList"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="70dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

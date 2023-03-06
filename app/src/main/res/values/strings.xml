@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Food Receipt</string>
+    <string name="login_sub">Proceed with your</string>
+    <string name="login">Login</string>
+    <string name="login_id">Login ID</string>
+    <string name="login_password">Password</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="home">Home</string>
+    <string name="billing">Billing</string>
+    <string name="bill_info">Bill Info</string>
+    <string name="product">Product</string>
+    <string name="continue_w">Continue</string>
+    <string name="product_caps">PRODUCT</string>
+    <string name="status">Status</string>
+    <string name="submit">SUBMIT</string>
+    <string name="available">AVAILABLE</string>
+    <string name="order">ORDER</string>
+    <string name="unit">UNIT</string>
+    <string name="enter_bill_no">ENTER BILL NO</string>
+    <string name="place_your_order">PLACE YOUR ORDER</string>
+    <string name="food_delivery">FOOD DELIVERY</string>
+    <string name="location">LOCATION</string>
+    <string name="bill_upload">BILL UPLOAD</string>
+    <string name="print_setting">PRINTERING SETTINGS</string>
+    <string name="total_price">Total Price</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="heading">FOOD APP</string>
+    <string name="open_nav">OPEN NAV</string>
+    <string name="close_nav">CLOSE NAV</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BillingInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginTop="-50dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/backgroud">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        app:cardBackgroundColor="@color/light_gray_50"
+                        app:cardCornerRadius="75dp">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            app:cardBackgroundColor="@color/colorOnPrimary"
+                            app:cardCornerRadius="65dp">
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/main_billing_info"/>
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="85dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textColor="@color/black"
+                                android:textAllCaps="true"
+                                android:text="@string/bill_info"/>
+                        </com.google.android.material.card.MaterialCardView>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="30dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/colorPrimary"
+                app:cardElevation="9dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_margin="30dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enter_bill_no"
+                        android:textStyle="bold"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/outlinedTextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        style="@style/LoginTextInputLayoutStyle"
+                        app:boxCornerRadiusBottomEnd="20dp"
+                        app:boxCornerRadiusBottomStart="20dp"
+                        app:boxCornerRadiusTopEnd="20dp"
+                        app:boxCornerRadiusTopStart="20dp"
+                        app:boxStrokeColor="@color/colorPrimary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="90dp"
+                android:backgroundTint="@color/black"
+                android:text="@string/submit"
+                app:cornerRadius="50pt"
+                android:elevation="20dp"
+                app:elevation="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintCircleRadius="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

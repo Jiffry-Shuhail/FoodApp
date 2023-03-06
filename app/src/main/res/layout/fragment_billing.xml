@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BillingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="@color/light_gray"
+                app:cardCornerRadius="75dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/colorOnPrimary"
+                    app:cardCornerRadius="65dp">
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/main_billing"/>
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="85dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:textAllCaps="true"
+                        android:text="@string/billing"/>
+                </com.google.android.material.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="50dp"
+                android:layout_marginBottom="-50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:background="@drawable/backgroud"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="50dp"
+                            app:cardBackgroundColor="@color/light_gray_50"
+                            app:cardCornerRadius="50dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/profile"
+                                android:layout_gravity="center"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:src="@drawable/person"/>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_marginTop="38dp"
+                            android:layout_marginRight="50dp"
+                            android:orientation="vertical">
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Smith Jakson"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"/>
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="37332383"
+                                android:textColor="@color/black"
+                                android:textSize="25dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/materialCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="369dp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginBottom="30dp"
+                            app:cardCornerRadius="40dp"
+                            app:layout_constraintBottom_toTopOf="@+id/submit"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text="\t"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"/>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:textAlignment="center"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/available"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"/>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:textAlignment="center"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/order"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"/>
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:paddingLeft="10dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/unit"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/goodsView"
+                                android:layout_marginTop="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/submit"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="28dp"
+                            android:layout_marginEnd="28dp"
+                            android:layout_marginBottom="90dp"
+                            android:backgroundTint="@color/black"
+                            android:text="@string/submit"
+                            app:cornerRadius="50pt"
+                            android:elevation="8dp"
+                            app:elevation="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintCircleRadius="50dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

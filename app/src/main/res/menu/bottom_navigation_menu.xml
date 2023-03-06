@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/billing"
+        android:icon="@drawable/ic_billing"
+        android:title="@string/billing"/>
+
+    <item
+        android:id="@+id/placeholder"
+        android:title=""/>
+
+    <item
+        android:id="@+id/billInfo"
+        android:icon="@drawable/ic_billing_info"
+        android:title="@string/bill_info"/>
+    <item
+        android:id="@+id/status"
+        android:icon="@drawable/ion_stats_chart"
+        android:title="@string/status"/>
+</menu>
